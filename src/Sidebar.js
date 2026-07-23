@@ -143,7 +143,7 @@ function Sidebar({ mobileOpen, onClose }) {
       <Toolbar sx={{ justifyContent: sidebarOpen ? 'space-between' : 'center' }}>
         {sidebarOpen && (
           <Typography variant="h6" noWrap sx={{ fontWeight: 700 }}>
-            DashUI
+            HRIS-APP
           </Typography>
         )}
         <Tooltip title={sidebarOpen ? 'Collapse' : 'Expand'} placement="right">
