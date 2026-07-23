@@ -28,7 +28,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/hris-app">
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         <AppBar
