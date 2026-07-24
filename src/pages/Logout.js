@@ -3,14 +3,14 @@ import { Typography, Card, CardContent, Box, Button } from '@mui/material';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { useNavigate } from 'react-router-dom';
 
-function Logout() {
+function Logout({ onLogout }) {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    // Here you would typically clear user data, tokens, etc.
-    console.log('User logged out');
-    // Redirect to login page (create a login page if needed)
-    navigate('/');
+    if (typeof onLogout === 'function') {
+      onLogout();
+    }
+    navigate('/login');
   };
 
   const handleCancel = () => {
