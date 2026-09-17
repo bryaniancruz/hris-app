@@ -24,12 +24,10 @@ function Login({ onLogin }) {
     >
       <Card sx={{ width: '100%', maxWidth: 420, borderRadius: 3, boxShadow: 4 }}>
         <CardContent>
-          <Typography variant="h5" component="h1" gutterBottom>
-            Sign in to HRIS-APP
+          <Typography variant="h5" component="h1"   gutterBottom sx={{ textAlign: 'center', fontWeight: 700 }}>
+           EHRIS Login
           </Typography>
-          <Typography color="textSecondary" sx={{ mb: 3 }}>
-            Enter your credentials to access the dashboard.
-          </Typography>
+          
           <Box component="form" onSubmit={handleSubmit} sx={{ display: 'grid', gap: 2 }}>
             <TextField label="Email address" type="email" required fullWidth />
             <TextField label="Password" type="password" required fullWidth />

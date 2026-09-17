@@ -56,6 +56,16 @@ function Dashboard() {
           />
         </Grid>
 
+
+         <Grid item xs={12} sm={6} md={3}>
+          <Widget
+            title="Leaves"
+            value="$123,456"
+            icon={<TrendingUpIcon sx={{ fontSize: 40, color: 'primary.main' }} />}
+            onClick={() => navigate('/analytics')}
+          />
+        </Grid>
+
         {/* Large Content Card */}
         <Grid item xs={12}>
           <Card>

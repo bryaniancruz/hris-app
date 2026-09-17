@@ -19,6 +19,7 @@ import Help from './pages/Help';
 import Logout from './pages/Logout';
 import Login from './pages/Login';
 import './App.css';
+import BNC from './pages/BNC';
 
 function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -51,6 +52,7 @@ function App() {
             position="fixed"
             sx={{
               width: '100%',
+              backgroundColor: 'green',
             }}
           >
             <Toolbar>
@@ -95,6 +97,7 @@ function App() {
               <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>} />
               <Route path="/settings" element={<RequireAuth><Settings /></RequireAuth>} />
               <Route path="/help" element={<RequireAuth><Help /></RequireAuth>} />
+               <Route path="/bnc" element={<RequireAuth><BNC /></RequireAuth>} />
               <Route path="/logout" element={<RequireAuth><Logout onLogout={handleLogout} /></RequireAuth>} />
             </Routes>
           </Box>

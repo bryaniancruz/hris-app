@@ -32,6 +32,7 @@ const menuItems = [
   { label: 'Dashboard', icon: DashboardIcon, id: 'dashboard', path: '/dashboard' },
   { label: 'Analytics', icon: AnalyticsIcon, id: 'analytics', path: '/analytics' },
   { label: 'Users', icon: PeopleIcon, id: 'users', path: '/users' },
+  { label: 'BNC', icon: PeopleIcon, id: 'bnc', path: '/bnc' },
 ];
 
 const settingsItems = [
